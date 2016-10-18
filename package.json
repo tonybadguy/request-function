@@ -1,0 +1,27 @@
+{
+  "name": "request-function",
+  "version": "1.0.0",
+  "description": "Node.js module to get the corresponding http/https request function based on url",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tonybadguy/request-function"
+  },
+  "keywords": [
+    "http",
+    "https",
+    "request"
+  ],
+  "author": "Tony Liu",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.6.2",
+    "tape-catch": "^1.0.6"
+  },
+  "dependencies": {
+    "error": "^7.0.2"
+  }
+}
