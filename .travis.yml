@@ -9,3 +9,4 @@ deploy:
   on:
     repo: tonybadguy/request-function
     branch: master
+    tags: true
