@@ -4,7 +4,8 @@
   "description": "Node.js module to get the corresponding http/https request function based on url",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js | node_modules/.bin/tap-spec"
+    "test": "tap index.test.js",
+    "coverage": "tap --coverage-report=lcov"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,8 @@
   "author": "Tony Liu",
   "license": "MIT",
   "devDependencies": {
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.2",
-    "tape-catch": "^1.0.6"
+    "codecov": "^1.0.1",
+    "tap": "^7.1.2"
   },
   "dependencies": {
     "error": "^7.0.2"

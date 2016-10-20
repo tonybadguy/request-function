@@ -1,6 +1,6 @@
 'use strict';
 const getRequestFunction = require('./index')
-const test = require('tape-catch');
+const test = require('tap').test;
 
 test('http protocol returns correct request', (assert => {
   assert.plan(1);
@@ -30,4 +30,9 @@ test('unknown protocol throws correct error', (assert) => {
     assert.equal(e.type, 'request-function/unknown-protocol');
     assert.equal(e.message, "Unknown protocol 'telnet:'");
   }
+});
+
+test('foo', (assert) => {
+  throw new Error("aaa");
+  assert.ok();
 });
