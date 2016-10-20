@@ -31,8 +31,3 @@ test('unknown protocol throws correct error', (assert) => {
     assert.equal(e.message, "Unknown protocol 'telnet:'");
   }
 });
-
-test('foo', (assert) => {
-  throw new Error("aaa");
-  assert.ok();
-});
