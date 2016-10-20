@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - 4
 after_success:
-  - npm coverage
+  - npm run cover
   - bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: npm
