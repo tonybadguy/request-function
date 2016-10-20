@@ -4,7 +4,7 @@
   "description": "Node.js module to get the corresponding http/https request function based on url",
   "main": "index.js",
   "scripts": {
-    "test": "tap index.test.js",
+    "test": "tap index.test.js --coverage",
     "cover": "tap --coverage-report=lcov"
   },
   "repository": {
