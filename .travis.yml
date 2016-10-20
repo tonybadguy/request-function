@@ -1,8 +1,5 @@
 language: node_js
 node_js:
-- node
-- 6
-- 5
 - 4
 deploy:
   provider: npm
@@ -12,3 +9,4 @@ deploy:
   on:
     repo: tonybadguy/request-function
     branch: master
+    tags: true
