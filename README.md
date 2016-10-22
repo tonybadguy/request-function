@@ -1,8 +1,8 @@
 # request-function
 
-[![Build Status](https://travis-ci.org/tonybadguy/request-function.svg?branch=master)](https://travis-ci.org/tonybadguy/request-function) [![codecov](https://codecov.io/gh/tonybadguy/request-function/branch/master/graph/badge.svg)](https://codecov.io/gh/tonybadguy/request-function) [![Code Climate](https://codeclimate.com/github/tonybadguy/request-function/badges/gpa.svg)](https://codeclimate.com/github/tonybadguy/request-function) [![Dependency Status](https://david-dm.org/tonybadguy/request-function.svg)](https://david-dm.org/tonybadguy/request-function) [![devDependency Status](https://david-dm.org/tonybadguy/request-function/dev-status.svg)](https://david-dm.org/tonybadguy/request-function#info=devDependencies) [![Known Vulnerabilities](https://snyk.io/test/github/tonybadguy/request-function/badge.svg)](https://snyk.io/test/github/tonybadguy/request-function)
+[![npm version](https://badge.fury.io/js/request-function.svg)](https://badge.fury.io/js/request-function) [![Build Status](https://travis-ci.org/tonybadguy/request-function.svg?branch=master)](https://travis-ci.org/tonybadguy/request-function) [![codecov](https://codecov.io/gh/tonybadguy/request-function/branch/master/graph/badge.svg)](https://codecov.io/gh/tonybadguy/request-function) [![bitHound Overall Score](https://www.bithound.io/github/tonybadguy/request-function/badges/score.svg)](https://www.bithound.io/github/tonybadguy/request-function)
 
-This Node.js module contains a simple helper function to get the corresponding http/https request function based on a url.
+This Node.js module contains a simple helper function for retrieving the corresponding http/https request function for a url.
 
 ```
 var httpRequest = requestFunction('http://www.google.com');
