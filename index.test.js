@@ -1,5 +1,5 @@
 'use strict';
-const requestFunction = require('./index')
+const requestFunction = require('./index');
 const test = require('tap').test;
 
 test('http protocol returns correct request', (assert => {
@@ -21,7 +21,7 @@ test('https protocol returns correct request', (assert => {
 test('unknown protocol throws correct error', (assert) => {
   assert.plan(2);
   
-  const requestFunction = require('./index')
+  const requestFunction = require('./index');
 
   try{
     requestFunction('telnet://localhost');
