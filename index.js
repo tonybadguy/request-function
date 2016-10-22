@@ -22,4 +22,4 @@ module.exports = (input) => {
         protocol: parsedUrl.protocol
       });
   }
-}
+};
