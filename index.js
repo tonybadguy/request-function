@@ -4,8 +4,10 @@ const https = require('https');
 const url = require('url');
 const typedError = require('error/typed');
 
+const unknownProtocolErrorType = 'request-function/unknown-protocol';
+
 const unknownProtocolError = typedError({
-  type: 'request-function/unknown-protocol',
+  type: unknownProtocolErrorType,
   message: "Unknown protocol '{protocol}'"
 });
 
@@ -29,5 +31,6 @@ const fromUrl = (urlString) => {
 
 module.exports = {
   fromProtocol: fromProtocol,
-  fromUrl: fromUrl
+  fromUrl: fromUrl,
+  unknownProtocolErrorType: unknownProtocolErrorType
 };
