@@ -5,8 +5,11 @@
 This Node.js module contains a simple helper function for retrieving the corresponding http/https request function for a url.
 
 ```
-var httpRequest = requestFunction('http://www.google.com');
-var httpsRequest = requestFunction('https://www.google.com');
+var httpRequest = requestFunction.fromUrl('http://www.google.com');
+var httpRequest = requestFunction.fromProtocol('http:');
+
+var httpsRequest = requestFunction.fromUrl('https://www.google.com');
+var httpsRequest = requestFunction.fromProtocol('https:');
 ```
 
 The Node.js http / https request functions are described here:
