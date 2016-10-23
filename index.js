@@ -4,22 +4,30 @@ const https = require('https');
 const url = require('url');
 const typedError = require('error/typed');
 
-let unknownProtocolError = typedError({
+const unknownProtocolError = typedError({
   type: 'request-function/unknown-protocol',
   message: "Unknown protocol '{protocol}'"
 });
 
-module.exports = (input) => {
-  let parsedUrl = url.parse(input);
-
-  switch(parsedUrl.protocol){
+const fromProtocol = (protocol) => {
+  switch(protocol){
     case 'http:':
       return http.request;
     case 'https:':
       return https.request;
     default:
       throw unknownProtocolError({
-        protocol: parsedUrl.protocol
+        protocol: protocol
       });
   }
+};
+
+const fromUrl = (urlString) => {
+  const parsedUrl = url.parse(urlString);
+  return fromProtocol(parsedUrl.protocol);
+};
+
+module.exports = {
+  fromProtocol: fromProtocol,
+  fromUrl: fromUrl
 };
